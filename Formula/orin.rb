@@ -2,28 +2,28 @@
 class Orin < Formula
   desc "Compiler for Orin, a statically typed language with verified contracts"
   homepage "https://github.com/orin-lang/orin-lang"
-  version "0.1.0-beta.1"
+  version "0.1.0-beta.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.1/orin-0.1.0-beta.1-macos-arm64.tar.gz"
-      sha256 "f57f68cb37816ed62b69ac3055a5c5e755dc2acfb55f0a71720c0fda7543ff26"
+      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.2/orin-0.1.0-beta.2-macos-arm64.tar.gz"
+      sha256 "f6076984b7511bcadf621221fc93af3131c2ea7ed3cdca37597640ecc2cfabab"
     end
     on_intel do
-      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.1/orin-0.1.0-beta.1-macos-x86_64.tar.gz"
-      sha256 "c4e941a724e9815f65c791130bb6409680444013d81e04107b94884ec9721a19"
+      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.2/orin-0.1.0-beta.2-macos-x86_64.tar.gz"
+      sha256 "bb8bd9b5ac73919a1bfe85982b2ed261b53cffc8f5004442e6dacaf9b7c79e53"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.1/orin-0.1.0-beta.1-linux-x86_64.tar.gz"
-      sha256 "65c084035c82fb58e29f9b10a41e86ca21d8cd3031162ed5df011054e3f5abab"
+      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.2/orin-0.1.0-beta.2-linux-x86_64.tar.gz"
+      sha256 "69370850883aba45ceee36330693cf40cbe04a8d85c8357aaedaa3c77f640810"
     end
     on_arm do
-      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.1/orin-0.1.0-beta.1-linux-aarch64.tar.gz"
-      sha256 "447054ba19080df0b7019d033f26a829a6453c2b68c299041b5b255eb037646f"
+      url "https://github.com/orin-lang/orin-lang/releases/download/v0.1.0-beta.2/orin-0.1.0-beta.2-linux-aarch64.tar.gz"
+      sha256 "1294f06c2e857e395e86260c465e41fb6d07a6a6b982fedcb3443d1a067aec0d"
     end
   end
 
