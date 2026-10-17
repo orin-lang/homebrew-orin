@@ -20,15 +20,13 @@ class Orin < Formula
   end
 
   test do
+    # 0.1.0-alpha.2 predates `orin doctor`, `orin run` and `orin build`; the next generated formula tests those.
     assert_equal version.to_s, shell_output("#{bin}/orin --version").strip
-    system bin/"orin", "doctor"
     (testpath/"hello.or").write <<~ORIN
       function main(): void {
         console.log("Hello from Homebrew!");
       }
     ORIN
-    assert_equal "Hello from Homebrew!", shell_output("#{bin}/orin run hello.or").strip
-    system bin/"orin", "build", "hello.or", "-o", "hello"
-    assert_equal "Hello from Homebrew!", shell_output("./hello").strip
+    system bin/"orin", "check", "hello.or"
   end
 end

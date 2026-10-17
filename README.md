@@ -2,7 +2,7 @@
 
 ```bash
 brew install orin-lang/orin/orin
-orin doctor
+orin --version
 ```
 
 Upgrade with `brew upgrade orin`, remove with `brew uninstall orin` (and `brew untap orin-lang/orin`).

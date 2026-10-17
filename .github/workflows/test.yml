@@ -1,6 +1,6 @@
 name: test
 
-# Installs the formula from this checkout on Apple silicon and runs its test block (version, doctor, run, build),
+# Installs the formula from this checkout on Apple silicon and runs its test block (see the formula),
 # then uninstalls. Runs on every PR (the release workflow's formula updates) and push.
 on:
   push:
@@ -25,7 +25,6 @@ jobs:
       - name: Smoke test outside the test sandbox
         run: |
           orin --version
-          orin doctor
       - name: Uninstall
         run: |
           brew uninstall --formula orin
